@@ -7,11 +7,11 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 
 public class EventJoinPlayer implements Listener {
-    Player player;
-    String username = player.getName();
-
     @EventHandler
     public void onJoin(PlayerJoinEvent event) {
+        Player player = event.getPlayer();
+        String username = player.getName();
+
         event.setJoinMessage(ChatColor.GREEN + "" + ChatColor.BOLD + "[Join]" +
                 ChatColor.WHITE + "Welcome" + username + "!");
     }
