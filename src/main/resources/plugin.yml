@@ -8,7 +8,6 @@ commands:
   msgClient:
     aliases:
       - 'client'
-      - 'msgClient'
     description: "Send a message to client"
 
 
