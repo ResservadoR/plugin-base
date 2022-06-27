@@ -1,6 +1,7 @@
 package com.plugin.baseplugin;
 
 import com.plugin.baseplugin.commands.CommandMessageClient;
+import com.plugin.baseplugin.events.EventJoinPlayer;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -32,6 +33,6 @@ public final class Plugin extends JavaPlugin {
 
     // Update Register Events - here us find the events registered
     public void registerEvents() {
-
+        Bukkit.getPluginManager().registerEvents(new EventJoinPlayer(), this);
     }
 }

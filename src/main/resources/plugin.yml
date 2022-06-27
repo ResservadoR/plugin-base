@@ -5,5 +5,10 @@ api-version: 1.18
 description: Base of plugin minecraft
 
 commands:
+  msgClient:
+    aliases:
+      - 'client'
+      - 'msgClient'
+    description: "Send a message to client"
 
 
