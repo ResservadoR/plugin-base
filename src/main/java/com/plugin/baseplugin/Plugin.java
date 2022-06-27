@@ -33,6 +33,10 @@ public final class Plugin extends JavaPlugin {
 
     // Update Register Events - here us find the events registered
     public void registerEvents() {
+        // Is called the events with the method by Bukkit (Bukkit.getPluginManager.registerEvents()).
+        // for register the events existing, later is event calling, and it is called in the method
+        // .registerEvents(new class_event(), this).
+        // The "this", refers to the plugin (main).
         Bukkit.getPluginManager().registerEvents(new EventJoinPlayer(), this);
     }
 }
